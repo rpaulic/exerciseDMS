@@ -1,15 +1,15 @@
 <?php
-$conn_error = 'Could not connect! ';
 
-$mysql_host = 'localhost';
-$mysql_user = 'root';
-$mysql_pass = '';
+$dbHost = 'localhost';
+$dbUser = 'root';
+$dbPass = '';
+$dbName = 'tutorials';
 
-$mysql_db = 'tutorials';
-
-if (!@mysql_connect($mysql_host, $mysql_user, $mysql_pass) || !@mysql_select_db($mysql_db)) {
-	die($conn_error);
+try {
+    $db = new PDO("mysql:host=$dbHost;db=$dbName", $dbUser, $dbPass);
+} catch (PDOException $e) {
+    echo '<pre>';
+    echo $e->getTraceAsString();
+    echo '</pre>';
+    exit;
 }
-
-echo 'Showing something.';
-?>
