@@ -11,4 +11,5 @@ if (!@mysql_connect($mysql_host, $mysql_user, $mysql_pass) || !@mysql_select_db(
 	die($conn_error);
 }
 
+echo 'Showing something.';
 ?>
