@@ -9,7 +9,7 @@ class DB_Connection {
         define('DB_PASSWORD', $dbPass);
     }
     
-    private static function db_con() {
+    private function db_con() {
         try {
             $db = new PDO(DB_DSN, DB_USER, DB_PASSWORD);
         } catch (PDOException $e) {
