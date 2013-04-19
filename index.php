@@ -5,7 +5,7 @@
     <title>Welcome</title>
 </head>
 <body>
-    <?php include 'connect_db.php'; ?>
+    <?php include 'library/connect_db.php'; ?>
     
     <header>
         <p>Please, log into the Data Management System:</p>
