@@ -19,7 +19,7 @@ $controller     = (!empty($url_parts[0]))           ? strtolower($url_parts[0]) 
 $action         = (!empty($url_parts[1]))           ? strtolower($url_parts[1]) : 'index';
 $id             = (!empty($url_parts[2]))           ? $url_parts[2]             : false;
 $filter         = (!empty($_GET['filter']))         ? $_GET['filter']           : false;
-$logged_in      = (isset($_SESSION['logged_in']))   ? true                      : false;
 */
 
-?>
+$logged_in      = (isset($_SESSION['logged_in']))   ? true                      : false;
+

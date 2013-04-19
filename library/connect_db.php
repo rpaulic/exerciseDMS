@@ -1,6 +1,5 @@
 <?php
 
-
 class DB_Connection {
     
     function __construct($dbHost, $dbName, $dbUser, $dbPass) {
@@ -20,5 +19,3 @@ class DB_Connection {
         }
     }
 }
-
-$connection = new DB_Connection('localhost', 'root', '', 'tutorials');
